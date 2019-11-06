@@ -3,9 +3,15 @@ import unittest
 import rpn
 
 class TestBasics(unittest.TestCase):
-    def test_exp(self):
+    def test_exp3(self):
         result = rpn.calculate("3 3 ^")
         self.assertEqual(27, result)
+    def test_exp2(self):
+        result = rpn.calculate("2 2 ^")
+        self.assertEqual(8, result)
+    def test_exp4(self):
+        result = rpn.calculate("4 4 ^")
+        self.assertEqual(64, result)
     def test_mult(self):
         result = rpn.calculate("4 3 *")
         self.assertEqual(12, result)
