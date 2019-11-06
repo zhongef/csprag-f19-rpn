@@ -8,9 +8,9 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(27, result)
     def test_exp2(self):
         result = rpn.calculate("2 2 ^")
-        self.assertEqual(8, result)
+        self.assertEqual(4, result)
     def test_exp4(self):
-        result = rpn.calculate("4 4 ^")
+        result = rpn.calculate("4 3 ^")
         self.assertEqual(64, result)
     def test_mult(self):
         result = rpn.calculate("4 3 *")
